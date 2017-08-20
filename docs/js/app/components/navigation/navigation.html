@@ -1,5 +1,5 @@
 <div class="links-container">
-    <a  href="https://yanasharipbaeva.github.io/pizza/{{nav.link}}" ng-click="select($index)" ng-class="{active: $index == selected} " class="nav-link" ng-repeat="nav in navigation">
+    <a  href="{{nav.link}}" ng-click="select($index)" ng-class="{active: $index == selected} " class="nav-link" ng-repeat="nav in navigation">
         <div class={{nav.class}}></div>
         <div class="nav-link__text">{{nav.title}}</div>
     </a>

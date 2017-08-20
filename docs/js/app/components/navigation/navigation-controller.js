@@ -5,17 +5,17 @@ export default class NavigationController {
         this.name = 'Navigation';
         $scope.navigation = [
             {
-                link:'/#!/main',
+                link:'#!/main',
                 title:'Main',
                 class: 'main-icon'
             },
             {
-                link:'/#!/cart',
+                link:'#!/cart',
                 title:'Cart',
                 class: 'cart-icon'
             },
             {
-                link:'/#!/history',
+                link:'#!/history',
                 title:'History',
                 class: 'history-icon'
             }
