@@ -1,0 +1,22 @@
+
+<h1>{{ $ctrl.name }}</h1>
+<br>
+<br>
+<section>
+    <ul>
+        <li ng-repeat="item in cartItems track by $index" class="item-container cart-container">
+            <div class="row">
+                <div class="col-md-12 col-lg-12 col-xs-12">
+                    <span>{{item.name}}</span> - <span>{{item.price}}$</span>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xs-2 button-area">
+                    <button class="btn btn-danger" ng-click="removeCartItem(item)">Remove</button>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <div class="order-price">Price of your order</div>: <div class="order-price price clear">{{summary}}$</div>
+    <div class="clear"></div>
+    <button class="btn btn-success" ng-disabled="checked" ng-click="submitOrder()">Submit</button>
+</section>
+

@@ -1,0 +1,21 @@
+<h1>{{ $ctrl.name }}</h1>
+<br>
+<br>
+<section>
+    <input type="button" class="btn btn-success" value="sort by date" ng-click="sortBy('date')">
+    <span class="sortorder"  ng-class="{reverse: reverse}"></span>
+    <br>
+    <br>
+    <ul>
+        <li ng-repeat="order in orders | orderBy:'date':reverse"><span>{{order.date | date:'medium'}}</span> ---
+            <span>{{order.order.length}} pizza (
+                <span ng-repeat="pizzaName in order.order track by $index">{{pizzaName.name}}
+                     <span ng-if="$index !== order.order.length - 1">,</span>
+                </span>)
+            </span> ---
+            <span>{{order.price}}$</span>
+        </li>
+    </ul>
+
+</section>
+

@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Margarita",
+    "ingredients": ["basil", "tomato", "mozzarella"],
+    "price": 5.75
+  },
+  {
+    "name": "Peperoni",
+    "ingredients": ["peperoni", "tomato", "mozzarella", "parmejano"],
+    "price": 7.00
+  },
+  {
+    "name": "Meat",
+    "ingredients": ["bacon", "tomato", "mozzarella", "ham", "salami"],
+    "price":12.00
+  },
+  {
+    "name": "Marina",
+    "ingredients": ["shrimp", "parmejano", "tuna", "galric"],
+    "price": 15.75
+  },
+  {
+    "name": "Toskana",
+    "ingredients": ["tender chicken", "fresh spinach leaves", "tomatoes", "feta"],
+    "price": 15.75
+  },
+  {
+    "name": "BBQ",
+    "ingredients": ["tender chicken", "juicy backon", "fresh mushrooms", "bbq sause"],
+    "price": 1.75
+  },
+  {
+    "name": "Carbonara",
+    "ingredients": ["ham", "mozarella","backon", "fresh mushrooms", "soft cheese and creamy Alfredo sause notes"],
+    "price": 5.75
+  }
+]

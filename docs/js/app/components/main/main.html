@@ -1,0 +1,22 @@
+<input type="text" ng-model="search.name" placeholder="Find your pizza" class="search-input">
+<input type="button" class="btn btn-success" value="Price" ng-click="sortBy('price')">
+<span class="sortorder"  ng-class="{reverse: reverse}"></span>
+<ol>
+    <li ng-repeat="pizza in food | filter : search:strict | orderBy:'price':reverse" class="item-container">
+        <div class="row">
+            <div class="col-md-10 col-lg-10 col-xs-10">
+                <h4 style="font-weight:bold">Pizza:</h4>
+                <p class="item-name">{{pizza.name}}</p>
+                <h4 style="font-weight:bold">Ingredients:</h4>
+                <p class="item-name">
+                    <span class="ingredient" ng-repeat="ingredient in pizza.ingredients track by $index">{{ingredient}}
+                        <span ng-if="$index !== pizza.ingredients.length - 1">,</span> </span>
+                </p>
+                <h4 style="font-weight:bold">Price:</h4> <p class="item-name">{{pizza.price}}$</p>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xs-2 button-area">
+                <input type="button" class="btn btn-primary" value="Add to Cart" ng-click="addToCart(pizza)">
+            </div>
+        </div>
+    </li>
+</ol>

@@ -1,0 +1,323 @@
+/*
+	Description: Reset style
+	Date: 00-00-0000
+	Time: 00-00
+	Author://
+*/
+/* ------------------------------------------------- reset.css ------------------------------------------------------ */
+address,
+article,
+aside,
+audio,
+b,
+blockquote,
+body,
+canvas,
+dd,
+details,
+div,
+dl,
+dt,
+em,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+html,
+i,
+img,
+label,
+li,
+mark,
+menu,
+nav,
+ol,
+p,
+q,
+section,
+select,
+span,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+textarea,
+tfoot,
+th,
+thead,
+time,
+tr,
+u,
+ul,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline; }
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline; }
+
+b,
+strong {
+  font-weight: bold; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal; }
+
+a {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  font-size: 100%;
+  vertical-align: baseline;
+  outline: none;
+  background-color: transparent; }
+  a:active, a:hover {
+    outline: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+td img {
+  vertical-align: top; }
+
+address,
+article,
+aside,
+blockquote,
+center,
+dd,
+details,
+dir,
+div,
+dl,
+dt,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+frameset,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+hr,
+isindex,
+main,
+menu,
+nav,
+noframes,
+noscript,
+ol,
+p,
+pre,
+section,
+summary,
+ul {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+ul {
+  list-style: none; }
+
+li {
+/*  list-style-type: none; */
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+body,
+html {
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.links-container {
+  margin: 20px 0 auto;
+  text-align: center;
+}
+
+.history-icon {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background: url("../img/svg/history.svg") no-repeat center;
+  background-size: contain;
+}
+
+.main-icon {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background: url("../img/svg/list.svg") no-repeat center;
+  background-size: contain;
+}
+
+.cart-icon {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background: url("../img/svg/cart.svg") no-repeat center;
+  background-size: contain;
+}
+
+.nav-link {
+    display: inline-block;
+    margin: 10px;
+}
+.links-container .active .nav-link__text{
+  color:#ffabab;
+  font-weight: bold;
+}
+.nav-link__text:hover{
+  color:#5bc0de;
+}
+
+a.active:hover, a.active:focus{
+  color:#5bc0de;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  text-decoration: none;
+}
+.nav-link .nav-link__text {
+    font-size: 18px;
+    color:#5bc0de;
+}
+
+.dropdown-menu .author-dropdown-title {
+    font-weight: bold;
+    text-align: center;
+}
+
+.sortorder:after {
+    content: '\25b2';
+}
+
+.sortorder.reverse:after {
+    content: '\25bc';
+}
+
+#toast-container > div {
+    padding: 0!important;
+    padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+#toast-container > div > .toast-success {
+  margin: 0!important;
+  margin-bottom: 15px;
+}
+
+.item-container {
+  border: 1px solid #f1f1f2;
+  border-radius: 5px;
+  box-shadow: 0 0 1px rgba(0,0,0, 0.15);
+  padding: 0 0 20px 20px;;
+  margin-bottom: 15px;
+  background: rgba(255,140,0, 0.1);
+}
+
+.item-name {
+  margin-bottom: 10px;
+}
+
+.clear {
+  clear:both;
+}
+
+.button-area {
+    display: table-cell;
+    vertical-align: middle;
+    float: none;
+    text-align: right;
+}
+
+.button-area .btn-primary {
+    cursor: pointer;
+    background: #00c4c4;
+    border: none;
+}
+
+.item-container > .row {
+    display: table;
+    width: 100%;
+}
+
+.search-input{
+    height: 34px;
+    width: 300px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    vertical-align: top;
+    padding-left: 10px;
+}
+
+.btn-success {
+    background: #00c4c4;
+}
+
+.btn-danger {
+  background: #ffabab;
+  border:none;
+  float:right;
+}
+
+.order-price {
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.price {
+  float: right;
+}
+
+.cart-container {
+    padding: 20px 0 20px 20px;
+}
+
+.cart-container .button-area {
+    padding-right: 0;
+}
+
+.ingredient {
+    color: #FF8C00;
+}
+
